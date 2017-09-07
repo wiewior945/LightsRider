@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:baselineAligned="false"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/policeButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/police"
+                android:onClick="buttonClick"
+                android:contentDescription="police"/>
+
+            <Button
+                android:id="@+id/warningButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:background="@drawable/warning"
+                android:contentDescription="warning"/>
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/redButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:background="@drawable/red"
+                android:contentDescription="red" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/blueButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:background="@drawable/blue"
+                android:contentDescription="blue" />
+
+            <Button
+                android:id="@+id/greenButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:background="@drawable/green"
+                android:contentDescription="green" />
+
+            <Button
+                android:id="@+id/yellowButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:background="@drawable/yellow"
+                android:contentDescription="yellow"/>
+
+            <Button
+                android:id="@+id/orangeButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:background="@drawable/orange"
+                android:contentDescription="orange" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/azureButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:background="@drawable/azure"
+                android:contentDescription="azure" />
+
+            <Button
+                android:id="@+id/pinkButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:background="@drawable/pink"
+                android:contentDescription="pink" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:text="Button" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button15"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:onClick="buttonClick"
+                android:text="Button" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Stop"
+        android:onClick="buttonClick"
+        android:contentDescription="stop"/>
+
+</RelativeLayout>
