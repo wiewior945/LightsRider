@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#737373">
 
     <RelativeLayout
         android:id="@+id/bluetoothRelativeLayout"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="#bfbfbf">
+        android:layout_alignParentTop="true">
 
         <Button
             android:id="@+id/searchBluetoothDevicesButton"
@@ -20,9 +21,10 @@
             android:layout_marginBottom="7dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="7dp"
-            android:background="#737373"
+            android:background="@drawable/button_background"
             android:onClick="searchDevices"
             android:text="Szukaj"
+            android:textColor="@color/mainColor"
             android:textAllCaps="false"
             android:textSize="17sp"
             android:textStyle="bold" />
@@ -36,12 +38,12 @@
             android:layout_alignParentTop="true"
             android:layout_margin="3dp"
             android:layout_toStartOf="@+id/searchBluetoothDevicesButton"
-            android:background="#737373"
+            android:background="@drawable/button_background"
             android:maxLines="10"
-            android:padding="2dp"
+            android:padding="3dp"
             android:scrollbars="vertical"
             android:textAlignment="viewStart"
-            android:textColor="@android:color/white" />
+            android:textColor="@color/mainColor" />
 
     </RelativeLayout>
 
@@ -51,7 +53,6 @@
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/bluetoothRelativeLayout"
-        android:background="#d9d9d9"
         android:orientation="vertical"
         android:padding="5dp" />
 

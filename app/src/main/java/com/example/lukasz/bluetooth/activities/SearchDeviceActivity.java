@@ -25,7 +25,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
-import java.util.jar.Manifest;
 
 public class SearchDeviceActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -130,8 +129,8 @@ public class SearchDeviceActivity extends AppCompatActivity implements View.OnCl
     private void addDeviceButton(BluetoothDevice device){
         LinearLayout.LayoutParams matchParentForButton = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         Button button = new Button(this);
-        button.setBackgroundColor(Color.parseColor("#737373"));
-        button.setTextColor(Color.WHITE);
+        button.setBackground(ContextCompat.getDrawable(this, R.drawable.button_background));
+        button.setTextColor(getColor(R.color.mainColor));
         button.setText("Nazwa: "+device.getName()+"   MAC: "+device.getAddress());
         button.setContentDescription(device.getAddress());
         button.setLayoutParams(matchParentForButton);
